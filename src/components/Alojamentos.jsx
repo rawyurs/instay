@@ -66,7 +66,7 @@ const Alojamentos = ({ alojamentosData, alojamentosAleatorios }) => {
                 </div>
 
                 <div className="offerBody">
-                  <p>
+                  <p className="nome-alojamento">
                     {result.name}
                   </p>
                   <div className="price flex">
