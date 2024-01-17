@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Slider from "react-slick";
+//ola
 import { MdKingBed } from "react-icons/md";
 import { MdBathtub } from "react-icons/md";
 import { FaWifi } from "react-icons/fa";
