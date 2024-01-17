@@ -52,7 +52,7 @@ const Alojamentos = ({ alojamentosData, alojamentosAleatorios }) => {
                   {result.images && result.images.length > 0 && (
                     <Slider {...settings}>
                       {result.images.map((image, imageIndex) => (
-                        <div key={imageIndex}>
+                        <div key={imageIndex} className="slider-item">
                           <img className="img-al" src={image} alt={`Image ${imageIndex + 1}`} />
                         </div>
                       ))}
