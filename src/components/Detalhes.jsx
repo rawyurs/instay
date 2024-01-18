@@ -55,7 +55,7 @@ const Detalhes = ({ alojamento, onClose }) => {
         url: "https://tripadvisor16.p.rapidapi.com/api/v1/restaurant/searchLocation",
         params: { query: alojamento.address },
         headers: {
-          'X-RapidAPI-Key': '7848d465c2mshd2b231d6729d9cfp1fb695jsnacc8f2c2850e',
+          'X-RapidAPI-Key': '3dc7759f2cmshda1719772f95daap1448a2jsn6cc02409c93b',
           'X-RapidAPI-Host': 'tripadvisor16.p.rapidapi.com'
         }
       });
@@ -83,7 +83,7 @@ const Detalhes = ({ alojamento, onClose }) => {
             locationId: primeiroLocationId
           },
           headers: {
-            'X-RapidAPI-Key': '7848d465c2mshd2b231d6729d9cfp1fb695jsnacc8f2c2850e',
+            'X-RapidAPI-Key': '3dc7759f2cmshda1719772f95daap1448a2jsn6cc02409c93b',
             'X-RapidAPI-Host': 'tripadvisor16.p.rapidapi.com'
           }
         });
