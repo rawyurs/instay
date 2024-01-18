@@ -406,12 +406,20 @@ input {
 
 @media screen and (min-width: 556px) {
   .mainContent {
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 18rem;
+    grid-template-columns: repeat(2, 1fr) !important;
+    margin-top: 22rem;
   }
 }
 
 @media screen and (min-width: 350px) {
+
+  .mainContent{
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .destImage{
+    width: 20rem;
+  }
+
   .container {
     width: 100% !important;
     height: 0% !important;
@@ -453,6 +461,7 @@ input {
 @media screen and (min-width: 350px) {
   .mainContent {
     margin-top: 40rem;
+    
   }
   .homeText {
     margin-top: -10rem;
@@ -465,7 +474,7 @@ input {
       .homeCard {
         bottom: -100px;
         width: 90%;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
         .btn {
           transform: translate(15px);
         }
@@ -479,6 +488,10 @@ input {
     width: 100% !important;
     height: 0% !important;
     margin-top: 0 !important;
+  }
+
+  .destImage{
+    width: 26.5rem;
   }
 }
 
@@ -599,7 +612,7 @@ input {
     .secContainer {
       .homeCard {
         bottom: -20%;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
       }
     }
   }
@@ -610,10 +623,12 @@ input {
     .secContainer {
       .homeCard {
         bottom: -10%;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(5, 1fr) !important;
       }
     }
   }
+
+ 
 }
 
 @media screen and (min-width: 720px) {
@@ -646,7 +661,7 @@ input {
 
 @media screen and (min-width: 884px) {
   .mainContent {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr) !important;
   }
 }
 
@@ -662,8 +677,10 @@ input {
 
 @media screen and (min-width: 1240px) {
   .mainContent {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr) !important;
     margin-top: 18rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
@@ -671,9 +688,6 @@ input {
   .container {
     width: 100% !important;
     height: 0% !important;
-    margin-left: 2rem !important;
-    margin-right: 6rem !important;
-    margin-top: 0 !important;
   }
 
   .homeText {
@@ -702,10 +716,16 @@ input {
   align-items: center;
   margin: 1rem 0 !important;
   color: grey;
+  font-size: 1rem;
 }
-
+h2{
+  color: black;
+  font-size: 1.5rem;
+}
 span {
   margin: 0 20px !important;
+  color: grey;
+  font-size: 1rem;
 }
 
 .detalhes-icones {
@@ -748,10 +768,17 @@ span {
 
 .topo h2 {
   font-weight: 600;
+  color: black;
+  font-size: 2rem;
 }
 .topo h4 {
   text-align: right;
   font-size: 1.5rem;
+}
+
+.iconseta{
+  color: grey;
+  font-size: 3rem;
 }
 
 .line {
@@ -781,6 +808,8 @@ span {
 
 .modificar-h1 {
   font-weight: 500;
+  color: black;
+  font-size: 1.2rem;
 }
 
 .reservar-caixa {
@@ -858,9 +887,15 @@ a.circle {
 .paragrafo-anfitriao {
   font-size: 0.8rem;
   font-weight: 400;
+  color: black;
+}
+h4{
+  color: black;
 }
 .paragrafo-superhost {
   margin-top: 1rem;
+  font-size: 1rem;
+  color: black;
 }
 .comentario-host {
   font-weight: 500;

@@ -58,7 +58,7 @@ const fetchAlojamentosAleatorios = async () => {
       params: {
         location: 'Portugal',
         adults: 1,
-        checkin: checkin,
+        checkin: "2024-01-18", // checkin
         checkout: checkout,
         currency: 'EUR'
       },

@@ -130,7 +130,7 @@ const Detalhes = ({ alojamento, onClose }) => {
     <div className="house-details">
       <div className="botao-fechar">
         <button className="btn botao-detalhes2" onClick={onClose}>
-          <IoChevronBackCircle className="icon" />
+          <IoChevronBackCircle className="iconseta" />
         </button>
       </div>
       <div className="house-title">
