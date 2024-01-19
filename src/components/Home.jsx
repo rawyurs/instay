@@ -24,7 +24,7 @@ const fetchData = async () => {
         currency: "EUR",
       },
       headers: {
-        "X-RapidAPI-Key": "9262a1e1f4msh9aeefe657db6df6p1ce450jsne34d4e801801",
+        "X-RapidAPI-Key": "3dc7759f2cmshda1719772f95daap1448a2jsn6cc02409c93b",
         "X-RapidAPI-Host": "airbnb13.p.rapidapi.com",
       },
     });
@@ -58,12 +58,12 @@ const fetchAlojamentosAleatorios = async () => {
       params: {
         location: 'Portugal',
         adults: 1,
-        checkin: "2024-01-18", // checkin
+        checkin: checkin,
         checkout: checkout,
         currency: 'EUR'
       },
       headers: {
-        "X-RapidAPI-Key": "9262a1e1f4msh9aeefe657db6df6p1ce450jsne34d4e801801",
+        "X-RapidAPI-Key": "3dc7759f2cmshda1719772f95daap1448a2jsn6cc02409c93b",
         "X-RapidAPI-Host": "airbnb13.p.rapidapi.com",
       },
     });
