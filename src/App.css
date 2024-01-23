@@ -752,7 +752,7 @@ input {
   }
 
   .mainContent {
-    margin-top: 15rem !important;
+    margin-top: 20rem !important;
     grid-template-columns: repeat(4, 1fr) !important;
     margin-top: 18rem;
     margin-left: 1rem;
