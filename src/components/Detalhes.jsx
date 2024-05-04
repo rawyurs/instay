@@ -55,7 +55,7 @@ const Detalhes = ({ alojamento, onClose }) => {
         url: "https://tripadvisor16.p.rapidapi.com/api/v1/restaurant/searchLocation",
         params: { query: alojamento.address },
         headers: {
-          'X-RapidAPI-Key': '3dc7759f2cmshda1719772f95daap1448a2jsn6cc02409c93b',
+          'X-RapidAPI-Key': 'f277ec8d92mshf551385c57575b5p1143eajsn7b62b85378bb',
           'X-RapidAPI-Host': 'tripadvisor16.p.rapidapi.com'
         }
       });
@@ -83,7 +83,7 @@ const Detalhes = ({ alojamento, onClose }) => {
             locationId: primeiroLocationId
           },
           headers: {
-            'X-RapidAPI-Key': '3dc7759f2cmshda1719772f95daap1448a2jsn6cc02409c93b',
+            'X-RapidAPI-Key': 'f277ec8d92mshf551385c57575b5p1143eajsn7b62b85378bb',
             'X-RapidAPI-Host': 'tripadvisor16.p.rapidapi.com'
           }
         });
@@ -282,7 +282,12 @@ const Detalhes = ({ alojamento, onClose }) => {
         <div className="featured-listings">
           {(restaurantes.data || []).slice(0, 4).map((restaurante, index) => (
             <div className="restaurant-card" key={index}>
-              <div className="card-header" style={{ background: `url(${restaurante.thumbnail && restaurante.thumbnail.photo && restaurante.thumbnail.photo.photoSizes[4] ? restaurante.thumbnail.photo.photoSizes[4].url : 'https://creativevip.net/resource-images/16-restaurant-icons-3.png'})`, backgroundSize: "cover" }}>
+              <div className="card-header" style={{
+                backgroundImage: `url(${restaurante.thumbnail.photo.photoSizeDynamic.urlTemplate.replace(/&?w=\{width\}&h=\{height\}/, '')})`,
+                backgroundSize: "cover"
+              }}>
+
+
                 <div className="favorite-btn">
                   <MdRestaurant className="icon-restaurante" />
                 </div>
@@ -298,6 +303,7 @@ const Detalhes = ({ alojamento, onClose }) => {
             </div>
           ))}
         </div>
+
       </div>
     </div>
   );
